@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  outline: 1px solid red;
+}
 
 body {
   background: #1B2330;
 }
+
 body section header {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1280px;
   padding-top: 73px;
 }
@@ -23,7 +27,7 @@ body section header ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 57px;
-  column-gap: 57px;
+          column-gap: 57px;
 }
 
 body section header ul li {
@@ -39,11 +43,11 @@ body section header ul li:active {
   font-size: 16px;
   font-weight: 700;
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 body section .now {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,11 +55,11 @@ body section .now {
   padding-top: 75px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body section .now img {
@@ -89,7 +93,7 @@ body section .now p {
 
 body section .now button {
   -webkit-filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
-  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
   padding: 19px 95px;
   border-radius: 50px;
   border: none;
@@ -105,36 +109,38 @@ body section .now button:active {
 }
 
 body section .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-top: 158px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 147px;
-  column-gap: 147px;
+          column-gap: 147px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 78px;
+  font-family: Raleway;
 }
 
 body section .wrapper .card {
   width: 349px;
   height: 214px;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body section .wrapper .card h4 {
@@ -159,14 +165,19 @@ body section .wrapper .card p {
 }
 
 body section .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-top: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 57px;
-  column-gap: 57px;
+          column-gap: 57px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body section .container img {
@@ -176,6 +187,7 @@ body section .container img {
 
 body section .container .container_info {
   padding-top: 114px;
+  background-color: #34A0CD;
 }
 
 body section .container .container_info h2 {
@@ -208,25 +220,463 @@ body section .container .container_info b {
 }
 
 body section .container .container_info .see_how {
-  width: 168px;
-  padding-top: 24px;
+  width: 166px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  border-bottom: 1px solid #62E0D9;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 5px;
+  border-bottom: 1px solid #62E0D9;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  cursor: pointer;
+  margin-top: 24px;
 }
 
-body section .container .container_info .see_how b {
+body section .container .container_info .see_how .see_p {
   color: #62E0D9;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
 }
 
+body section .container .container_info .see_how div {
+  width: 12px;
+  height: 12px;
+}
+
+body section .container .container_info .see_how:active {
+  border-bottom: 1px solid #fff;
+}
+
+body section .container .container_info .see_how:active .see_p {
+  color: #FFF;
+}
+
+body section .commintary {
+  max-width: 1175px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding: 120px 60px 0px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section .commintary .commintary_card_one {
+  position: relative;
+  border-radius: 3.933px;
+  background: #202A3C;
+  -webkit-box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+          box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+  padding: 40px 24px 26px 26px;
+}
+
+body section .commintary .commintary_card_one .backround_img {
+  position: absolute;
+  -webkit-transform: translate(-35px, -207px);
+          transform: translate(-35px, -207px);
+  z-index: -1;
+}
+
+body section .commintary .commintary_card_one p {
+  width: 309.303px;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+body section .commintary .commintary_card_one .commintary_user {
+  width: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .commintary .commintary_card_one .commintary_user .commintary_user_foto {
+  width: 24px;
+  height: 24px;
+}
+
+body section .commintary .commintary_card_one .commintary_user .commintary_user_info {
+  width: 100px;
+}
+
+body section .commintary .commintary_card_one .commintary_user .commintary_user_info h5 {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+}
+
+body section .commintary .commintary_card_one .commintary_user .commintary_user_info p {
+  width: 100px;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+body section .commintary .commintary_card_two {
+  border-radius: 3.933px;
+  background: #202A3C;
+  -webkit-box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+          box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+  padding: 40px 24px 26px 26px;
+}
+
+body section .commintary .commintary_card_two p {
+  width: 309.303px;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+body section .commintary .commintary_card_two .commintary_user {
+  width: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .commintary .commintary_card_two .commintary_user .commintary_user_foto {
+  width: 24px;
+  height: 24px;
+}
+
+body section .commintary .commintary_card_two .commintary_user .commintary_user_info {
+  width: 100px;
+}
+
+body section .commintary .commintary_card_two .commintary_user .commintary_user_info h5 {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+}
+
+body section .commintary .commintary_card_two .commintary_user .commintary_user_info p {
+  width: 100px;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+body section .registratsiya_section {
+  width: 1280px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+body section .registratsiya_section .registratsiya {
+  text-align: center;
+  width: 750px;
+  padding: 42px 77px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  background: #1B2330;
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(201px);
+          transform: translateY(201px);
+}
+
+body section .registratsiya_section .registratsiya h3 {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+body section .registratsiya_section .registratsiya p {
+  width: 673px;
+  padding-top: 16px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button {
+  padding-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 29px;
+          column-gap: 29px;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button input {
+  padding: 16px 208px 16px 38px;
+  border: none;
+  border-radius: 24px;
+  outline: none;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button input::-webkit-input-placeholder {
+  color: #C0C0C0;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button input:-ms-input-placeholder {
+  color: #C0C0C0;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button input::-ms-input-placeholder {
+  color: #C0C0C0;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button input::placeholder {
+  color: #C0C0C0;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body section .registratsiya_section .registratsiya .input_and_button button {
+  padding: 15px 26px;
+  border: none;
+  border-radius: 24px;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  background: #63E1D9;
+  -webkit-filter: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+          filter: drop-shadow(2px 3px 6px rgba(7, 4, 59, 0.16));
+}
+
+body section .registratsiya_section .registratsiya .input_and_button button:active {
+  background-color: #8ADAE3;
+}
+
+body section footer {
+  width: 100%;
+  background: #0B1524;
+}
+
+body section footer .footer_div {
+  max-width: 1240px;
+  background: #0B1524;
+  margin: 0 auto;
+  padding: 169px 0px 153px 0px;
+}
+
+body section footer .footer_div .footer_logo {
+  width: 100%;
+}
+
+body section footer .footer_div .footer_info {
+  width: 100%;
+  height: 50px;
+  padding-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section footer .footer_div .footer_info .info_locatsiya {
+  width: 379px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+body section footer .footer_div .footer_info .info_locatsiya img {
+  width: 24px;
+  height: 24px;
+  padding-top: 5px;
+}
+
+body section footer .footer_div .footer_info .info_locatsiya p {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body section footer .footer_div .footer_info .info_contact_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+body section footer .footer_div .footer_info .info_contact_number .number_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 22px;
+          column-gap: 22px;
+}
+
+body section footer .footer_div .footer_info .info_contact_number .number_top p {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+body section footer .footer_div .footer_info .info_about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+body section footer .footer_div .footer_info .info_about ul li {
+  padding: 6px 0;
+}
+
+body section footer .footer_div .footer_info .info_about ul li:hover {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body section footer .footer_div .footer_info .info_contact_us ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+  height: 22px;
+}
+
+body section footer .footer_div .footer_info .info_contact_us ul li {
+  padding: 6px 0;
+}
+
+body section footer .footer_div .footer_info .info_contact_us ul li:hover {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body section footer .footer_div .footer_info .info_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+body section footer .footer_div .footer_info .info_icon div {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section footer .footer_div .footer_info .info_icon img {
+  width: 31px;
+  height: 31px;
+}
 /*# sourceMappingURL=style.css.map */
