@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
-* {
-  outline: 1px solid red;
-}
-
 body {
   background: #1B2330;
 }
@@ -62,9 +58,13 @@ body section .now {
           align-items: center;
 }
 
-body section .now img {
+body section .now .bacround_media_one {
   width: 720px;
   height: 534px;
+}
+
+body section .now .bacround_media {
+  display: none;
 }
 
 body section .now h1 {
@@ -73,13 +73,13 @@ body section .now h1 {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
-  width: 734px;
+  max-width: 734px;
   padding-top: 36px;
   font-family: Raleway;
 }
 
 body section .now p {
-  width: 589px;
+  max-width: 589px;
   color: #FFF;
   text-align: center;
   font-family: "Open Sans";
@@ -127,8 +127,7 @@ body section .wrapper {
 }
 
 body section .wrapper .card {
-  width: 349px;
-  height: 214px;
+  max-width: 349px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
@@ -149,12 +148,12 @@ body section .wrapper .card h4 {
   font-size: 20px;
   font-weight: 700;
   padding-top: 16px;
-  width: 263px;
+  max-width: 263px;
   font-family: Raleway;
 }
 
 body section .wrapper .card p {
-  width: 349px;
+  max-width: 349px;
   color: #FFF;
   text-align: center;
   font-family: "Open Sans";
@@ -166,18 +165,15 @@ body section .wrapper .card p {
 
 body section .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 57px;
-          column-gap: 57px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body section .container img {
@@ -187,7 +183,7 @@ body section .container img {
 
 body section .container .container_info {
   padding-top: 114px;
-  background-color: #34A0CD;
+  max-width: 563px;
 }
 
 body section .container .container_info h2 {
@@ -196,7 +192,7 @@ body section .container .container_info h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  width: 480px;
+  max-width: 480px;
 }
 
 body section .container .container_info p {
@@ -206,21 +202,21 @@ body section .container .container_info p {
   font-weight: 400;
   line-height: 24px;
   padding-top: 19px;
-  width: 563px;
+  max-width: 563px;
   padding-bottom: 16px;
 }
 
-body section .container .container_info b {
+body section .container .container_info .Securely {
   color: #FFF;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 563px;
+  max-width: 563px;
 }
 
 body section .container .container_info .see_how {
-  width: 166px;
+  max-width: 166px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,8 +282,12 @@ body section .commintary .commintary_card_one .backround_img {
   z-index: -1;
 }
 
+body section .commintary .commintary_card_one .backround_img {
+  display: none;
+}
+
 body section .commintary .commintary_card_one p {
-  width: 309.303px;
+  max-width: 309.303px;
   color: #FFF;
   font-family: 'Open Sans';
   font-size: 14px;
@@ -297,7 +297,7 @@ body section .commintary .commintary_card_one p {
 }
 
 body section .commintary .commintary_card_one .commintary_user {
-  width: 133px;
+  max-width: 133px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +346,7 @@ body section .commintary .commintary_card_two {
 }
 
 body section .commintary .commintary_card_two p {
-  width: 309.303px;
+  max-width: 309.303px;
   color: #FFF;
   font-family: 'Open Sans';
   font-size: 14px;
@@ -356,7 +356,7 @@ body section .commintary .commintary_card_two p {
 }
 
 body section .commintary .commintary_card_two .commintary_user {
-  width: 133px;
+  max-width: 133px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ body section .commintary .commintary_card_two .commintary_user .commintary_user_
 }
 
 body section .commintary .commintary_card_two .commintary_user .commintary_user_info {
-  width: 100px;
+  max-width: 100px;
 }
 
 body section .commintary .commintary_card_two .commintary_user .commintary_user_info h5 {
@@ -387,7 +387,7 @@ body section .commintary .commintary_card_two .commintary_user .commintary_user_
 }
 
 body section .commintary .commintary_card_two .commintary_user .commintary_user_info p {
-  width: 100px;
+  max-width: 100px;
   color: #FFF;
   font-family: 'Open Sans';
   font-size: 7px;
@@ -397,17 +397,15 @@ body section .commintary .commintary_card_two .commintary_user .commintary_user_
 }
 
 body section .registratsiya_section {
-  width: 1280px;
+  max-width: 1280px;
   height: 360px;
   margin: 0 auto;
 }
 
 body section .registratsiya_section .registratsiya {
   text-align: center;
-  width: 750px;
+  max-width: 750px;
   padding: 42px 77px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +434,7 @@ body section .registratsiya_section .registratsiya h3 {
 }
 
 body section .registratsiya_section .registratsiya p {
-  width: 673px;
+  max-width: 673px;
   padding-top: 16px;
   color: #FFF;
   text-align: center;
@@ -678,5 +676,264 @@ body section footer .footer_div .footer_info .info_icon div {
 body section footer .footer_div .footer_info .info_icon img {
   width: 31px;
   height: 31px;
+}
+
+@media (max-width: 1280px) {
+  body section header {
+    padding: 24px 22px 0 22px;
+  }
+  body section footer .footer_div {
+    padding: 256px 39px;
+  }
+}
+
+@media (max-width: 1210px) {
+  body section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 160px;
+  }
+  body section .container .container_info {
+    padding-top: 48px;
+    width: 100%;
+  }
+  body section .commintary {
+    padding: 170px 48px 0px 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  section footer {
+    padding-bottom: 412px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    width: 100%;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-top: 16px;
+  }
+  section footer .footer_div .footer_info .info_about {
+    padding-top: 59px;
+    row-gap: 16px;
+  }
+  section footer .footer_div .footer_info .info_contact_us {
+    padding-top: 48.5px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    padding-top: 156px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  body section .registratsiya_section .registratsiya .input_and_button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  body section .wrapper .card svg {
+    width: 80px;
+    height: 80px;
+  }
+  body section .wrapper .card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 24px;
+  }
+  body section .wrapper .card p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 750px) {
+  body section .now {
+    width: 100%;
+  }
+  body section .now h1 {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 36px;
+    padding-top: 33px;
+  }
+  body section .now p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 15px 36px 32px;
+  }
+  body section .now button {
+    font-size: 14px;
+    padding: 16px 81px;
+  }
+  body section .now .bacround_media {
+    display: block;
+  }
+  body section .now .bacround_media_one {
+    display: none;
+  }
+  body section .wrapper .card svg {
+    width: 80px;
+    height: 80px;
+  }
+  body section .wrapper .card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 24px;
+  }
+  body section .wrapper .card p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 650px) {
+  body section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 160px;
+  }
+  body section .container img {
+    width: 304px;
+    height: 230px;
+  }
+  body section .container .container_info h2 {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body section .container .container_info p {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body section .container .container_info .Securely {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  body section .container .container_info .see_how {
+    margin-left: 28px;
+    width: 130px;
+  }
+  body section .container .container_info .see_how svg {
+    width: 12px;
+    height: 12px;
+  }
+  body section .container .container_info .see_how .see_p {
+    color: #62E0D9;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  body section header {
+    padding: 24px 22px 0 22px;
+  }
+  body section header .header_logo svg {
+    width: 80px;
+    height: 24px;
+  }
+  body section header ul {
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
+  }
+  body section header ul li {
+    font-size: 12px;
+  }
+  body section header ul li:active {
+    font-size: 12px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  body section .commintary .commintary_card_one .backround_img {
+    display: none;
+  }
+  body section .commintary .commintary_card_one .backround_img2 {
+    position: absolute;
+    -webkit-transform: translate(-27px, -147px);
+            transform: translate(-27px, -147px);
+    z-index: -1;
+  }
+  body section .commintary .commintary_card_one .backround_img2 {
+    display: block;
+  }
+  body section .commintary .commintary_card_one p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  body section .commintary .commintary_card_one .commintary_user {
+    padding-top: 17px;
+  }
+  body section .commintary .commintary_card_two p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  body section .commintary .commintary_card_two .commintary_user {
+    padding-top: 17px;
+  }
+  body section .registratsiya_section .registratsiya {
+    padding-top: 40px;
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+  body section .registratsiya_section .registratsiya h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body section .registratsiya_section .registratsiya p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button button {
+    padding: 16px 73px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button input {
+    padding: 17px 100px 17px 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

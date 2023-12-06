@@ -1,11 +1,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
   * {
-      outline: 1px solid red;
+      //   outline: 1px solid red;
   }
 
   body {
       background: #1B2330;
+
 
 
       section {
@@ -35,6 +36,7 @@
                       font-weight: 700;
                       text-decoration-line: underline;
                   }
+
               }
 
 
@@ -48,9 +50,13 @@
               flex-direction: column;
               align-items: center;
 
-              img {
+              .bacround_media_one {
                   width: 720px;
                   height: 534px;
+              }
+
+              .bacround_media {
+                  display: none;
               }
 
               h1 {
@@ -59,14 +65,14 @@
                   font-size: 40px;
                   font-weight: 700;
                   line-height: 60px;
-                  width: 734px;
+                  max-width: 734px;
                   padding-top: 36px;
                   font-family: Raleway;
 
               }
 
               p {
-                  width: 589px;
+                  max-width: 589px;
                   color: #FFF;
                   text-align: center;
                   font-family: "Open Sans";
@@ -110,8 +116,7 @@
 
 
               .card {
-                  width: 349px;
-                  height: 214px;
+                  max-width: 349px;
                   flex-shrink: 0;
                   display: flex;
                   flex-direction: column;
@@ -124,13 +129,13 @@
                       font-size: 20px;
                       font-weight: 700;
                       padding-top: 16px;
-                      width: 263px;
+                      max-width: 263px;
                       font-family: Raleway;
 
                   }
 
                   p {
-                      width: 349px;
+                      max-width: 349px;
                       color: #FFF;
                       text-align: center;
                       font-family: "Open Sans";
@@ -145,13 +150,13 @@
 
           .container {
               max-width: 1280px;
+              width: 100%;
               margin: 0 auto;
-              //   background-color: yellow;
               padding-top: 137px;
               display: flex;
-              column-gap: 57px;
-              flex-wrap: wrap;
-              justify-content: center;
+              //   column-gap: 57px;
+              //   flex-wrap: wrap;
+              justify-content: space-between;
 
               img {
                   width: 614.755px;
@@ -161,7 +166,7 @@
 
               .container_info {
                   padding-top: 114px;
-                  background-color: #34A0CD;
+                  max-width: 563px;
 
                   h2 {
                       color: #FFF;
@@ -169,7 +174,7 @@
                       font-size: 40px;
                       font-weight: 700;
                       line-height: 50px;
-                      width: 480px;
+                      max-width: 480px;
                   }
 
                   p {
@@ -179,23 +184,23 @@
                       font-weight: 400;
                       line-height: 24px;
                       padding-top: 19px;
-                      width: 563px;
+                      max-width: 563px;
                       padding-bottom: 16px;
                   }
 
-                  b {
+                  .Securely {
                       color: #FFF;
                       font-family: "Open Sans";
                       font-size: 16px;
                       font-weight: 400;
                       line-height: 24px;
-                      width: 563px;
+                      max-width: 563px;
 
 
                   }
 
                   .see_how {
-                      width: 166px;
+                      max-width: 166px;
                       display: flex;
                       align-items: center;
                       padding-bottom: 5px;
@@ -252,8 +257,13 @@
                       z-index: -1;
                   }
 
+                  .backround_img {
+                      display: none;
+
+                  }
+
                   p {
-                      width: 309.303px;
+                      max-width: 309.303px;
                       color: #FFF;
                       font-family: 'Open Sans';
                       font-size: 14px;
@@ -264,7 +274,7 @@
                   }
 
                   .commintary_user {
-                      width: 133px;
+                      max-width: 133px;
                       display: flex;
                       padding-top: 24px;
                       column-gap: 8px;
@@ -307,7 +317,7 @@
                   padding: 40px 24px 26px 26px;
 
                   p {
-                      width: 309.303px;
+                      max-width: 309.303px;
                       color: #FFF;
                       font-family: 'Open Sans';
                       font-size: 14px;
@@ -318,7 +328,7 @@
                   }
 
                   .commintary_user {
-                      width: 133px;
+                      max-width: 133px;
                       display: flex;
                       padding-top: 24px;
                       column-gap: 8px;
@@ -330,7 +340,7 @@
                       }
 
                       .commintary_user_info {
-                          width: 100px;
+                          max-width: 100px;
 
                           h5 {
                               color: #FFF;
@@ -342,7 +352,7 @@
                           }
 
                           p {
-                              width: 100px;
+                              max-width: 100px;
                               color: #FFF;
                               font-family: 'Open Sans';
                               font-size: 7px;
@@ -356,18 +366,15 @@
           }
 
           .registratsiya_section {
-              width: 1280px;
+              max-width: 1280px;
               height: 360px;
-              //   background-color: tomato;
               margin: 0 auto;
 
 
               .registratsiya {
                   text-align: center;
-                  width: 750px;
+                  max-width: 750px;
                   padding: 42px 77px;
-                  flex-shrink: 0;
-                  //   background-color: rgba(255, 255, 0, 0.488);
                   margin: 0 auto;
                   display: flex;
                   flex-direction: column;
@@ -386,7 +393,7 @@
                   }
 
                   p {
-                      width: 673px;
+                      max-width: 673px;
                       padding-top: 16px;
                       color: #FFF;
                       text-align: center;
@@ -452,6 +459,7 @@
                   margin: 0 auto;
                   padding: 169px 0px 153px 0px;
 
+
                   .footer_logo {
                       width: 100%;
                   }
@@ -484,7 +492,6 @@
                       }
 
                       .info_contact_number {
-                          //   background-color: blue;
                           display: flex;
                           flex-direction: column;
                           row-gap: 16px;
@@ -582,6 +589,400 @@
                       }
                   }
               }
+          }
+      }
+  }
+
+
+
+
+
+  //   =============   media===========
+
+
+  @media(max-width:1280px) {
+      body {
+
+
+          section {
+
+              header {
+                  padding: 24px 22px 0 22px;
+              }
+
+              footer {
+                  .footer_div {
+                      padding: 256px 39px;
+
+                      .footer_info {
+                          // flex-direction: column;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media(max-width:1210px) {
+      body {
+
+
+          section {
+
+              .container {
+                  flex-direction: column;
+                  align-items: center;
+                  padding-top: 160px;
+
+                  .container_info {
+                      padding-top: 48px;
+                      width: 100%;
+                  }
+              }
+
+              .commintary {
+                  padding: 170px 48px 0px 48px;
+                  justify-content: center;
+                  gap: 24px;
+              }
+
+          }
+      }
+  }
+
+  @media (max-width:1000px) {
+      section {
+          footer {
+              padding-bottom: 412px;
+
+              .footer_div {
+                  .footer_info {
+                      width: 100%;
+                      flex-direction: column;
+                      padding-top: 35px;
+
+
+                      .info_locatsiya {
+                          max-width: 300px;
+
+                          p {
+                              width: 100%;
+                              color: #FFF;
+                              font-family: Open Sans;
+                              font-size: 16px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: 24px;
+                              /* 150% */
+                          }
+                      }
+
+                      .info_contact_number {
+                          padding-top: 16px;
+                      }
+
+                      .info_about {
+                          padding-top: 59px;
+                          row-gap: 16px;
+                      }
+
+                      .info_contact_us {
+                          padding-top: 48.5px;
+                      }
+
+                      .info_icon {
+                          padding-top: 156px;
+                          margin: 0 auto;
+
+                      }
+                  }
+              }
+          }
+      }
+
+  }
+
+  @media(max-width:780px) {
+      body {
+          section {
+              .registratsiya_section {
+                  .registratsiya {
+                      .input_and_button {
+                          flex-direction: column;
+                          row-gap: 24px;
+                      }
+                  }
+              }
+
+              .wrapper {
+                  .card {
+                      svg {
+                          width: 80px;
+                          height: 80px;
+                      }
+
+                      h4 {
+                          font-size: 18px;
+                          line-height: 24px;
+                          padding-top: 24px;
+                      }
+
+                      p {
+                          font-size: 14px;
+                          line-height: 21px;
+                      }
+
+                  }
+              }
+
+          }
+      }
+  }
+
+  @media(max-width:750px) {
+      body {
+          section {
+              .now {
+                  width: 100%;
+
+                  //   padding: 53px 36px;
+                  h1 {
+                      font-size: 24px;
+                      line-height: 36px;
+                      padding: 0 36px;
+                      padding-top: 33px;
+
+
+                  }
+
+                  p {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 21px;
+                      padding: 15px 36px 32px;
+
+
+                  }
+
+                  button {
+                      font-size: 14px;
+                      padding: 16px 81px;
+                  }
+
+
+                  .bacround_media {
+                      display: block;
+                  }
+
+                  .bacround_media_one {
+                      display: none;
+                  }
+              }
+
+              .wrapper {
+                  .card {
+                      svg {
+                          width: 80px;
+                          height: 80px;
+                      }
+
+                      h4 {
+                          font-size: 18px;
+                          line-height: 24px;
+                          padding-top: 24px;
+                      }
+
+                      p {
+                          font-size: 14px;
+                          line-height: 21px;
+                      }
+
+                  }
+              }
+
+          }
+      }
+  }
+
+  @media (max-width:650px) {
+      body {
+
+
+          section {
+
+              .container {
+                  flex-direction: column;
+                  align-items: center;
+                  padding-top: 160px;
+
+
+                  img {
+                      width: 304px;
+                      height: 230px;
+                  }
+
+                  .container_info {
+                      h2 {
+                          padding-left: 28px;
+                          padding-right: 28px;
+                          font-size: 18px;
+                          line-height: 24px;
+
+
+                      }
+
+                      p {
+                          padding-left: 28px;
+                          padding-right: 28px;
+                          font-size: 14px;
+                          line-height: 21px;
+
+                      }
+
+                      .Securely {
+                          font-size: 14px;
+                          line-height: 21px;
+                          padding-left: 28px;
+                          padding-right: 28px;
+
+
+                      }
+
+                      .see_how {
+                          margin-left: 28px;
+                          width: 130px;
+
+                          svg {
+                              width: 12px;
+                              height: 12px;
+                          }
+
+                          .see_p {
+                              color: #62E0D9;
+                              font-size: 12px;
+                          }
+
+
+                      }
+
+                      // padding: 48px 28px 0 28px;
+
+                  }
+              }
+          }
+      }
+
+
+  }
+
+  @media(max-width:570px) {
+      body {
+
+
+          section {
+
+              header {
+                  padding: 24px 22px 0 22px;
+
+                  .header_logo {
+
+                      svg {
+                          width: 80px;
+                          height: 24px;
+
+                      }
+                  }
+
+                  ul {
+                      column-gap: 24px;
+
+                      li {
+                          font-size: 12px;
+                      }
+
+                      li:active {
+                          font-size: 12px;
+                          text-decoration-line: underline;
+                      }
+                  }
+
+
+              }
+
+              .commintary {
+                  .commintary_card_one {
+                      .backround_img {
+                          display: none;
+
+                      }
+
+                      .backround_img2 {
+                          position: absolute;
+                          transform: translate(-27px, -147px);
+                          z-index: -1;
+                      }
+
+                      .backround_img2 {
+                          display: block;
+
+                      }
+
+                      p {
+                          font-size: 10px;
+                          line-height: 18px;
+
+                      }
+
+                      .commintary_user {
+                          padding-top: 17px;
+                      }
+                  }
+
+                  .commintary_card_two {
+                      p {
+                          font-size: 10px;
+                          line-height: 18px;
+
+                      }
+
+                      .commintary_user {
+                          padding-top: 17px;
+                      }
+
+                  }
+              }
+
+              .registratsiya_section {
+                  .registratsiya {
+                      padding-top: 40px;
+                      transform: translateY(160px);
+
+                      h3 {
+                          font-size: 18px;
+                          line-height: 24px;
+                      }
+
+                      p {
+                          font-size: 14px;
+                          line-height: 21px;
+
+                      }
+
+                      .input_and_button {
+                          flex-direction: column;
+                          row-gap: 24px;
+
+                          button {
+                              padding: 16px 73px;
+                          }
+
+                          input {
+                              padding: 17px 100px 17px 30px;
+                          }
+                      }
+                  }
+              }
+
           }
       }
   }
