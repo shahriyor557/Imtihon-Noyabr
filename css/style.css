@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
-* {
-  outline: 1px solid blue;
-}
-
 body {
   background: #1B2330;
 }
@@ -69,6 +65,8 @@ body section .now .bacround_media_one {
 
 body section .now .bacround_media {
   display: none;
+  width: 304px;
+  height: 230px;
 }
 
 body section .now h1 {
@@ -180,7 +178,7 @@ body section .container {
           justify-content: space-between;
 }
 
-body section .container img {
+body section .container .container_img {
   width: 614.755px;
   height: 463.633px;
 }
@@ -245,13 +243,42 @@ body section .container .container_info .see_how .see_p {
 body section .container .container_info .see_how div {
   width: 12px;
   height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body section .container .container_info .see_how:active {
+body section .container .container_info .see_how div svg {
+  fill: #fff;
+}
+
+body section .container .container_info .see_how:hover {
   border-bottom: 1px solid #fff;
 }
 
-body section .container .container_info .see_how:active .see_p {
+body section .container .container_info .see_how:hover div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .container .container_info .see_how:hover div svg {
+  fill: white;
+}
+
+body section .container .container_info .see_how:hover .see_p {
   color: #FFF;
 }
 
@@ -287,6 +314,10 @@ body section .commintary .commintary_card_one .backround_img {
 }
 
 body section .commintary .commintary_card_one .backround_img {
+  display: block;
+}
+
+body section .commintary .commintary_card_one .backround_img2 {
   display: none;
 }
 
@@ -661,22 +692,6 @@ body section footer .footer_div .footer_info .info_icon {
           column-gap: 12px;
 }
 
-body section footer .footer_div .footer_info .info_icon div {
-  width: 31px;
-  height: 31px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 body section footer .footer_div .footer_info .info_icon img {
   width: 31px;
   height: 31px;
@@ -717,41 +732,36 @@ body section footer .footer_div .footer_info .info_icon img {
 
 @media (max-width: 1000px) {
   section footer {
-    padding-bottom: 412px;
+    padding-bottom: 72px;
   }
   section footer .footer_div .footer_info {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
     padding-top: 35px;
   }
   section footer .footer_div .footer_info .info_locatsiya {
     max-width: 300px;
   }
   section footer .footer_div .footer_info .info_locatsiya p {
-    width: 100%;
     color: #FFF;
     font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
   }
   section footer .footer_div .footer_info .info_contact_number {
-    padding-top: 16px;
+    padding-bottom: 0;
   }
   section footer .footer_div .footer_info .info_about {
-    padding-top: 59px;
     row-gap: 16px;
   }
-  section footer .footer_div .footer_info .info_contact_us {
-    padding-top: 48.5px;
-  }
   section footer .footer_div .footer_info .info_icon {
-    padding-top: 156px;
     margin: 0 auto;
   }
 }
@@ -831,7 +841,7 @@ body section footer .footer_div .footer_info .info_icon img {
             align-items: center;
     padding-top: 160px;
   }
-  body section .container img {
+  body section .container .container_img {
     width: 304px;
     height: 230px;
   }
@@ -938,6 +948,95 @@ body section footer .footer_div .footer_info .info_icon img {
   }
   body section .registratsiya_section .registratsiya .input_and_button input {
     padding: 17px 100px 17px 30px;
+  }
+}
+
+@media (max-width: 445px) {
+  section footer {
+    padding-bottom: 252px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    width: 100%;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-top: 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  section footer .footer_div .footer_info .info_about {
+    row-gap: 16px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  section footer {
+    padding-bottom: 302px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    width: 100%;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-top: 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  section footer .footer_div .footer_info .info_about {
+    row-gap: 16px;
+    width: 40%;
+    text-align: center;
+    padding-top: 60.5px;
+  }
+  section footer .footer_div .footer_info .info_contact_us {
+    width: 50%;
+    text-align: center;
+    padding-top: 60.5px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    margin: 0 auto;
+    padding-top: 60.5px;
+  }
+  section .commintary .commintary_card_one .backround_img2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
