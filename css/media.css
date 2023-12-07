@@ -1,0 +1,343 @@
+@media (max-width: 1280px) {
+  body section header {
+    padding: 24px 22px 0 22px;
+  }
+  body section footer .footer_div {
+    padding: 256px 39px;
+  }
+}
+
+@media (max-width: 1210px) {
+  body section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 160px;
+  }
+  body section .container .container_info {
+    padding-top: 48px;
+    width: 100%;
+  }
+  body section .commintary {
+    padding: 170px 48px 0px 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  section footer {
+    padding-bottom: 72px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-bottom: 0;
+  }
+  section footer .footer_div .footer_info .info_about {
+    row-gap: 16px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  body section .registratsiya_section .registratsiya .input_and_button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  body section .wrapper .card svg {
+    width: 80px;
+    height: 80px;
+  }
+  body section .wrapper .card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 24px;
+  }
+  body section .wrapper .card p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 750px) {
+  body section .now {
+    width: 100%;
+  }
+  body section .now h1 {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 36px;
+    padding-top: 33px;
+  }
+  body section .now p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 15px 36px 32px;
+  }
+  body section .now button {
+    font-size: 14px;
+    padding: 16px 81px;
+  }
+  body section .now .bacround_media {
+    display: block;
+  }
+  body section .now .bacround_media_one {
+    display: none;
+  }
+  body section .wrapper .card svg {
+    width: 80px;
+    height: 80px;
+  }
+  body section .wrapper .card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 24px;
+  }
+  body section .wrapper .card p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 650px) {
+  body section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 160px;
+  }
+  body section .container .container_img {
+    width: 304px;
+    height: 230px;
+  }
+  body section .container .container_info h2 {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body section .container .container_info p {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body section .container .container_info .Securely {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  body section .container .container_info .see_how {
+    margin-left: 28px;
+    width: 130px;
+  }
+  body section .container .container_info .see_how svg {
+    width: 12px;
+    height: 12px;
+  }
+  body section .container .container_info .see_how .see_p {
+    color: #62E0D9;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  body section header {
+    padding: 24px 22px 0 22px;
+  }
+  body section header .header_logo svg {
+    width: 80px;
+    height: 24px;
+  }
+  body section header ul {
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
+  }
+  body section header ul li {
+    font-size: 12px;
+  }
+  body section header ul li:active {
+    font-size: 12px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  body section .commintary .commintary_card_one .backround_img {
+    display: none;
+  }
+  body section .commintary .commintary_card_one .backround_img2 {
+    position: absolute;
+    -webkit-transform: translate(-27px, -147px);
+            transform: translate(-27px, -147px);
+    z-index: -1;
+  }
+  body section .commintary .commintary_card_one .backround_img2 {
+    display: block;
+  }
+  body section .commintary .commintary_card_one p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  body section .commintary .commintary_card_one .commintary_user {
+    padding-top: 17px;
+  }
+  body section .commintary .commintary_card_two p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  body section .commintary .commintary_card_two .commintary_user {
+    padding-top: 17px;
+  }
+  body section .registratsiya_section .registratsiya {
+    padding-top: 40px;
+    -webkit-transform: translateY(160px);
+            transform: translateY(160px);
+  }
+  body section .registratsiya_section .registratsiya h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body section .registratsiya_section .registratsiya p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button button {
+    padding: 16px 73px;
+  }
+  body section .registratsiya_section .registratsiya .input_and_button input {
+    padding: 17px 100px 17px 30px;
+  }
+}
+
+@media (max-width: 445px) {
+  section footer {
+    padding-bottom: 252px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    width: 100%;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-top: 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  section footer .footer_div .footer_info .info_about {
+    row-gap: 16px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
+  section footer {
+    padding-bottom: 302px;
+  }
+  section footer .footer_div .footer_info {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 35px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya {
+    max-width: 300px;
+  }
+  section footer .footer_div .footer_info .info_locatsiya p {
+    width: 100%;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  section footer .footer_div .footer_info .info_contact_number {
+    padding-top: 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  section footer .footer_div .footer_info .info_about {
+    row-gap: 16px;
+    width: 40%;
+    text-align: center;
+    padding-top: 60.5px;
+  }
+  section footer .footer_div .footer_info .info_contact_us {
+    width: 50%;
+    text-align: center;
+    padding-top: 60.5px;
+  }
+  section footer .footer_div .footer_info .info_icon {
+    margin: 0 auto;
+    padding-top: 60.5px;
+  }
+  section .commintary .commintary_card_one .backround_img2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */
